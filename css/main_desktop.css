@@ -1,11 +1,11 @@
-@media (min-width: 1025px){
+@media (min-width: 1201px){
 
   .trends_title{
     text-align: center;
-    padding-bottom: 22px;
+    padding-bottom: 27px;
     font-family: open-sans-b, sans-serif;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
   }
   .trends_title::after{
     content: "";
@@ -19,18 +19,30 @@
     background: #b59f5b;
   }
   .aside_trends{
-    margin-top: 43px;
+    margin-top: 53px;
     width: 100%;
   }
-  .aside_trend_container{
+  /* .aside_trend_container{
     position: relative;
     z-index: 0;
     width: calc(25% - 5px);
    display: inline-block;
    /* display: flex;  */
-   /* flex-wrap: wrap; */
-    
+   /* flex-wrap: wrap; 
+  } */
+  .all_trends{
+    display: flex;
   }
+  .aside_trend_container{
+    display: flex;
+    align-items: flex-end;
+    height: 320px;
+    width: 25%;
+   }
+   .aside_trend_container:nth-last-child(n+2){
+    margin-right: 3px;
+   }
+  
   .aside_trend_container::after { 
     content: "";
     position: absolute;
@@ -38,8 +50,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* width: 100%;
-    height: 100%; */
     background-color: #000000;
     opacity: 0.6;
     z-index: 1;
@@ -67,29 +77,78 @@
     text-transform: uppercase;
     font-family: open-sans-b;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
   }
-
-  .aside_trend_content{
-    /* display: flex;
+  .trend_pic_trend1{
+    background-image: url("../img/trend1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #6d6c69;
+    position: relative;
+     z-index: 0;
+  } 
+  .trend_pic_trend2{
+    background-image: url("../img/trend2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #6d6c69;
+    position: relative;
+     z-index: 0;
+  }
+  .trend_pic_trend3{
+    background-image: url("../img/trend3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #6d6c69;
+    position: relative;
+     z-index: 0;
+  }
+  .trend_pic_trend4{
+    background-image: url("../img/trend4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #6d6c69;
+    position: relative;
+     z-index: 0;
+  }
+.aside_trend_content{
+    display: flex;
     flex-wrap: wrap;
-    align-items: center; */
-    line-height: 1.2;
-    position: absolute;
-    
-    bottom: 15px;
-    right: 19px;
-    left: 19px;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    z-index: 2;
     box-sizing: border-box;
     border: 3px solid #b59f5b;
     padding: 25px;
+    margin: 0 20px 15px 20px;
+}
+  /* .aside_trend_content{ */
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+
+
+    /* line-height: 1.2;
+    position: absolute;
+    bottom: 15px;
+    right: 19px;      !!!!!
+    left: 19px;
+    box-sizing: border-box;
+    border: 3px solid #b59f5b;
+    padding: 25px; */
+    
     /* width: 100%; */
     /* margin: 150px 20px 20px 20px; */
     /* max-width: 480px;
     max-height: 200px; */
     /* font-weight: 400; */
-    z-index: 2;
-  }
+
+    /* z-index: 2; !!!! */
+  /* } */
   .trend_picture{
     width: 100%;
     /* height: 246px; */
@@ -100,8 +159,8 @@
   
 
   .container{
-    min-width: 1024px;
-    max-width: 1200px;
+    /* min-width: 1024px; */
+    min-width: 1170px;
     padding-top: 64px ;
     padding-left: 15px;
     padding-right: 15px;
@@ -122,10 +181,11 @@
   }
   .main{
     max-width: calc(74% - 70px);
+    /* max-width: 74%; */
   }
   .main_post{
-    margin-top: 45px;
     display: flex;
+    padding-bottom: 55px;
   }
   .main_post_container{
     width: 50%;
@@ -135,8 +195,7 @@
     display: flex;
     flex-wrap: wrap;/*для переноса тегов на новую строку если их много*/
     list-style-type: none; /*убираем точки у списка*/
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 0.9;
   }
   .main_post_tag_list_name_link{ /*теги в посте*/
     text-decoration: none;
@@ -158,8 +217,8 @@
     display: flex; /*в одну строку*/
     font-size: 12px;
     /*line-height: 3.0; /*интерлиньяж*/
-    padding-top: 20px;
-    padding-bottom: 20px;                         
+    padding-top: 26px;
+    /* padding-bottom: 20px;                          */
     }
   .main_post_date{ /*дата поста*/
     font-family: open-sans-r;
@@ -173,7 +232,7 @@
   
   }
   .main_post_content{/*для описания поста*/
-    /* transform: translate(0, 50%);             !!!!!!!!!!!!описание по центру!!!!!!!!!!!! */
+    transform: translate(0, 50%);           /*  !!!!!!!!!!!!описание по центру!!!!!!!!!!!!*/
     font-family: open-sans-r;
     font-size: 15px;
     line-height: 1.6;/*интерлиньяж*/
@@ -181,18 +240,18 @@
 
                                                         /* /* NEW POST */
   .aside{ /*колонка справа / новые посты и тд*/
-  margin-right: 35px;
- width: calc(26% - 35px);
+
+ width: calc(26% - 30px);
+  /* max-width: 26%; */
   }
 
   .new_post_item{
     display: flex;
   padding-bottom: 20px;
-  /*margin-top: -9px;*/
-  line-height: 0.9; /*интерлиньяж для новых постов*/
-  }
-  .new_post_pic{
-    padding-right: 15px;
+  /* height: 70px;
+  box-sizing: content-box; */
+  /* margin-top: -9px; */
+  line-height: 0.5; 
   }
   
   .aside_item_title_new_posts{
@@ -202,6 +261,7 @@
   font-family: open-sans-b, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 1.1;
   }
   
   .aside_item_title_new_posts::after {/*полоса подчеркивания у заголовков*/
@@ -215,20 +275,30 @@
     height: 3px;
     background: #b59f5b;
   }
-  
+  .new_post_container{
+    padding-left: 17px;
+    /* margin-right: 35px; */
+    line-height: 0.7;
+  }
   .new_post_date{ /*дата поста*/
     font-family: open-sans-r;
     font-size: 12px;
     color: #909090;
-    line-height: 1.1;
+    /* line-height: 0.1; */
+   
+  }
+  .new_post_item_title{
+    line-height: 1;
   }
   .new_post_item_title_link{/*ссылка заголовок новые посты*/
+    /* transform: translate(0, 50%); */
     text-decoration: none;
     text-transform: uppercase;
     font-family: open-sans-b;
     color: #0f0d0e;
     font-size: 14px;
-  }
+}
+
   .new_post_item_title_link:hover{
     color: #b59f5b;
   }
@@ -236,7 +306,7 @@
                           /*поиск в aside*/
   .search{/* группа поиска*/
     display: flex;
-      padding-top: 38px;
+      padding-top: 45px;
     padding-bottom: 57px;
   }
   .field {  /* поиск*/
@@ -262,7 +332,7 @@
     background-color: #b59f5b;
   }
   .search-group{
-    width: 100%;
+    width: calc(100% - 52px);
   }
   .search_button:hover {
     background-color: #e2595e;
@@ -444,18 +514,13 @@
   
 
                     /*НАШИ ИЗДЕЛИЯ*/
-.pruducts_container{
-  margin-top: 45px;
-  margin-left: 15px;
-  margin-right: 15px;
 
-}
 .title_our_product{
   text-align: center;
   padding-bottom: 15px;
   font-family: open-sans-b, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
 }
 .title_our_product::after {/*полоса подчеркивания у заголовков*/
   content: "";
@@ -471,18 +536,39 @@
 .aside_product{
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: space-between;
+
   width: 100%;
+  /* width: calc(100% - 120px); */
   /* align-self: center; */
 
 }
 .new_product{
   z-index: 0;
-  max-width: calc(33.3% - 50px);
+  /* max-width: calc(33.3% - 40px); */
+  max-width: 30%;
+  display: flex; 
+  flex-direction: column;
+  /* max-width: 33.3%; */
+  /* border: 3px solid black;
+  position: relative; */
+  
 }
-.new_product:nth-child(2){
+/* .new_product::after{
+  content: "";
+  display: block;
+  border: 3px solid black;
+  z-index: 2;
+  position: relative;
+  top: -250px;
+  height: 50%;
+ 
+} */
+/* .new_product:nth-child(2){
   margin-left: 60px;
   margin-right: 60px;
-}
+} */
 .product_img{
   width: 100%;
 }
@@ -502,6 +588,9 @@
   padding-right: 25px;
   padding-bottom: 25px;
   z-index: 1;
+
+  flex-grow: 1;
+
 }
 .product_title{
   text-decoration: none;
@@ -555,6 +644,5 @@
 .about_product_link:hover{
   text-decoration: underline;
 }
-   
 
 }
